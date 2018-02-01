@@ -1,15 +1,188 @@
 ---
-title: Le Wagon - Middleman
+title: Opptis - Vagas para restaurantes
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="wrapper-white">
+  <div class="container">
+    <div class="home-banner">
+      <div class="row">
+        <div class="home-text-container col-xs-12 col-md-8">
+          <div class="home-text-content">
+            <h1>
+              Conheça a <em>Opptis</em>, sua Plataforma de Oportunidades para Bares & Restaurantes
+            </h1>
+            <p>
+              Queremos reinventar o processo de recrutamento em bares e restaurantes.<br>
+              Ajudando empresas e funcionários a preencher a vaga ideal.
+            </p>
+            <div class="home-text-links">
+              <%= link_to "Registrar", "registro.html", class: "btn btn-primary" %>
+              <%= link_to "", "#", class: "btn-gplay" %>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="home-image-container">
+            <div class="home-image">
+              <%= image_tag "banner_img.png", id: "banner_img" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper-blue1">
+  <div class="container">
+
+    <div class="col-xs-12">
+      <div class="home-restaurant-img">
+        <%= image_tag "restaurantes.png", id: "home_restaurants"%>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4">
+      <div class="home-image-container">
+        <div class="home-image">
+          <%= image_tag "joao.png", id: "joao_img", class: "left-img" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-text-container col-xs-12 col-md-8">
+      <div class="home-text-content home-text-white">
+        <p>
+          A historia de João não é real, <strong>mas ela ilustra a realidade de muitas pessoas no mercado de trabalho.</strong> Sem oportunidades de estudo e com pouco acesso a informação, se torna mais complicado a busca por um emprego.<br><strong>Queremos ajudar pessoas como Joao a encontrar melhores oportunidades que se encaixem com sua experiência.</strong>
+        </p>
+        <div class="home-text-links">
+          <%= link_to "Sou Candidato", "candidato.html", class: "btn btn-info" %>
+          <%= link_to "", "#", class: "btn-gplay" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="wrapper-blue2">
+  <div class="container">
+
+  <div class="home-text-container col-xs-12 col-md-8">
+    <div class="home-text-content home-text-white">
+      <p>
+        A situação de Vinicius é <strong>recorrente em diversos estabelecimentos, sejam bares, restaurantes, lojas e em muito outros negócios.</strong> A alta rotatividade de funcionários é uma realidade que sobrecarrega sua operação. <strong>Buscamos ajudar empresários como Vinicius a solucionar esse problema sem comprometer o andamento de suas atividades.</strong>
+      </p>
+      <div class="home-text-links">
+        <%= link_to "Sou Restaurante", "restaurante.html", class: "btn btn-info" %>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-xs-12 col-md-4">
+      <div class="home-image-container">
+        <div class="home-image">
+          <%= image_tag "vinicius_r.png", id: "vinicius_img", class: "right-img"%>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="wrapper-blue3">
+  <div class="container">
+
+    <div class="logo-div">
+      <div class="logo-div-small">
+        <%= image_tag "logo_white_small.png", id: "logo_white_small" %>
+      </div>
+    </div>
+
+    <div class="logo-text">
+      <p>
+        <strong>A Opptis é uma plataforma de oportunidades</strong> que busca unir João e Vinicius para <strong>gerar uma situação ganha-ganha</strong>.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="wrapper-white">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-12 col-md-4">
+        <div class="home-image-container" style="margin-top: 50px;">
+          <div class="home-image">
+            <%= image_tag "vagas.png", id: "vagas_img", class: "left-img" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-text-container col-xs-12 col-md-8">
+        <div class="home-text-content">
+          <h2>
+            Encontre vagas em restaurantes de acordo com suas preferências<br>&macr;&macr;&macr;&macr;&macr;&macr;&macr;
+          </h2>
+          <p>
+            Utilize os ﬁltros para escolher as oportunidades mais compatíveis com o seu perﬁl.
+          </p>
+        </div>
+        <div style="width: 50px;"></div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="home-text-container col-xs-12 col-md-8">
+        <div class="home-text-content">
+          <p>
+            A historia de João não é real, <strong>mas ela ilustra a realidade de muitas pessoas no mercado de trabalho.</strong> Sem oportunidades de estudo e com pouco acesso a informação, se torna mais complicado a busca por um emprego.<br><strong>Queremos ajudar pessoas como Joao a encontrar melhores oportunidades que se encaixem com sua experiência.</strong>
+          </p>
+          <div class="home-text-links">
+            <%= link_to "Sou Restaurante", "restaurante.html", class: "btn btn-info" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <div class="home-image-container">
+          <div class="home-image">
+            <%= image_tag "vinicius_r.png", id: "vinicius_img", class: "right-img" %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12 col-md-4">
+        <div class="home-image-container">
+          <div class="home-image">
+            <%= image_tag "joao.png", id: "joao_img", class: "left-img" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-text-container col-xs-12 col-md-8">
+        <div class="home-text-content">
+          <p>
+            A historia de João não é real, <strong>mas ela ilustra a realidade de muitas pessoas no mercado de trabalho.</strong> Sem oportunidades de estudo e com pouco acesso a informação, se torna mais complicado a busca por um emprego.<br><strong>Queremos ajudar pessoas como Joao a encontrar melhores oportunidades que se encaixem com sua experiência.</strong>
+          </p>
+          <div class="home-text-links">
+            <%= link_to "Sou Candidato", "candidato.html", class: "btn btn-info" %>
+            <%= link_to "", "#", class: "btn-gplay" %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>
