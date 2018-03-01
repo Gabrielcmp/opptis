@@ -27,27 +27,7 @@ p {
   font-size: 20px;
 }
 
-.right-container {
-  padding-left: 15px;
-}
 
-@media screen and (min-width: 1200px) {
-  .right-container {
-    margin-left: 100 !important;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .right-container {
-    margin-left: 100 !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .right-container {
-    margin-left: 100 !important;
-  }
-}
 .home-banner {
   padding: 50px 0 100px;
   height: 65vh;
@@ -62,12 +42,14 @@ p {
   }
 
 }
+.home-text-links {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 180px 180px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
 .home-text-content {
-  .home-text-links {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-  }
   h2 {
     color: $blue1;
   }
@@ -81,11 +63,11 @@ p {
   background-image: url("/images/gplay.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   min-width: 150px;
   height: 48px;
   padding: 1px;
   display: inline-block;
-  margin-left: 25px;
 }
 
 .banner-image {
@@ -163,6 +145,11 @@ p {
 
   .home-text-left {
     padding-left: 0px;
+  }
+
+  .home-text-links {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .home-text-container {
