@@ -20,7 +20,7 @@ em {
 
 h1 {
   font-weight: 800;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 p {
@@ -45,50 +45,52 @@ p {
   .home-text-links {
     margin-top: 40px;
     display: flex;
+    align-items: center;
   }
   h2 {
     color: $blue1;
   }
 }
 
+.home-text-left {
+  padding-left: 30px;
+}
+
 .btn-gplay {
   background-image: url("/images/gplay.png");
-  background-size: cover;
-  width: 152px;
-  height: 53px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 150px;
+  height: 48px;
   padding: 1px;
   display: inline-block;
   margin-left: 25px;
 }
 
-.home-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  .home-image {
-    display: flex;
-    max-width: 360px;
-  }
-
-  #banner_img {
-  margin-bottom: 170px;
-  padding-top: 25px;
-  }
-
-  .left-img {
-    margin-right: 50px;
-  }
-
-  .right-img {
-    margin-left: 50px;
-  }
+.banner-image {
+  width: 100%;
+  min-height: 360px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.home-restaurant-img {
-  display: flex;
-  justify-content: space-around;
+.home-restaurants {
   margin: -170px -150px 50px -150px;
-  min-width: 800px;
+  height: 30vh;
+  background-image: url('http://res.cloudinary.com/dskbrfm0n/image/upload/c_scale,w_1400/v1517450056/restaurantes_rgbgws.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.vinicius-image {
+  width: 100%;
+  min-height: 360px;
+  background-image: url('http://res.cloudinary.com/dskbrfm0n/image/upload/c_scale,w_400/v1517450057/vinicius_r_bcw7cx.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .logo-div {
@@ -113,3 +115,36 @@ p {
 }
 
 
+.home-grid-1 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+
+}
+
+.home-grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+
+}
+
+@media screen and (max-width: 780px) {
+  .home-grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .home-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .home-text-left {
+    padding-left: 0px;
+  }
+
+  .home-text-container {
+    min-height: 200px;
+  }
+}
