@@ -27,6 +27,27 @@ p {
   font-size: 20px;
 }
 
+.right-container {
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .right-container {
+    margin-left: 100 !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .right-container {
+    margin-left: 100 !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .right-container {
+    margin-left: 100 !important;
+  }
+}
 .home-banner {
   padding: 50px 0 100px;
   height: 65vh;
