@@ -27,12 +27,6 @@ p {
   font-size: 20px;
 }
 
-
-.home-banner {
-  padding: 50px 0 100px;
-  height: 65vh;
-
-}
 .home-text-container {
   display: flex;
   min-height: 360px;
@@ -76,6 +70,40 @@ p {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.banner-container {
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .banner-container {
+    margin-left: calc(50vw - 375px);
+  }
+  #candidato-banner {
+    min-height: 450px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-container {
+    margin-left: calc(50% - 485px);
+  }
+  #candidato-banner {
+    min-height: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-container {
+    margin-left: calc(50% - 585px);
+  }
+  #candidato-banner {
+    min-height: 450px;
+  }
+}
+
+.left-banner {
+  background-position: right;
 }
 
 .home-restaurants {
