@@ -74,3 +74,28 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+
+.navbar-container {
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    margin-left: calc(50vw - 375px);
+    margin-right: calc(50vw - 375px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-container {
+    margin-left: calc(50% - 485px);
+    margin-right: calc(50% - 485px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-container {
+    margin-left: calc(50% - 585px);
+    margin-right: calc(50% - 585px);
+  }
+}
